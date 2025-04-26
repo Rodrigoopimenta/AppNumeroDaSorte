@@ -85,7 +85,7 @@
 		<!-- App Icon -->
 		<MauiIcon Condition="$([MSBuild]:: GetTargetPlatFormIdentifier('$(TargetFramewort)')) != 'android'" Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" TintColor="#FFFFFF" />
     
-    <MauiIcon Condition="$([MSBuild]:: GetTargetPlatFormIdentifier('$(TargetFramewort)')) == 'android'" Update="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appicon_android_fg.svg"  TintColor="#FFFFFF" />
+    <MauiIcon Condition="$([MSBuild]:: GetTargetPlatFormIdentifier('$(TargetFramewort)')) == 'android'" Update="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appicon_android_fg.svg"  ForegroundScale="0.1" TintColor="#FFFFFF" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="178,178" />
